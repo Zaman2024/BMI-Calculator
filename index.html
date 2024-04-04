@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>BMI calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<h2>BMI calculator</h2>
+    <div class="d-flex">
+        <form action="/action_page.php">
+            <div class="drop">
+                <label for="Gender">Choose Gender:</label>
+                <select name="Gender" id="select" required>
+                    <option selected>--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <span class="sp1">Height(CM) :
+                <input type="text" id="height" style="margin: 10px" placeholder="0 cm" /></span>
+            <span class="sp2">
+                Weight(KG) :
+                <input type="text" id="weight" placeholder="0 kg" style="margin: 10px" /></span><br /><br />
+            <button class="button" id="btn">Calculate BMI</button><br><br>
+
+            <div id="display" class="view">BMI ?</div><br>
+            <p id="demo"></p><br>
+            <hr style="border:1px solid #111111;"><br>
+            <h4>BMI Categories : </h4>
+			<ul>
+				<li> Underweight = &#60; 18.5 </li>
+                <li>Normal weight = 18.5–24.9</li>
+                <li>Overweight = 25–29.9</li>
+                <li>Obesity = BMI of 30 or greate</li>
+			</ul>
+        </form>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
